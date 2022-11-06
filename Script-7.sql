@@ -50,3 +50,18 @@ SELECT
 FROM DUAL
 
 
+CALL CLIENT_CREATE('김태훈', '19930101', '010-1111-1111', '서울시 종로구', 'taehoon@gmail.com');
+
+CALL CLIENT_CREATE(5003, '조영진', '19960202', '010-2222-2222', '서울시 성북구', 'youngjin@gmail.com');
+
+CALL CLIENT_CREATE(5002, '김태훈', '19930101', '010-1111-1111', '서울시 종로구', 'taehoon@gmail.com');
+
+CALL CLIENT_CREATE(5004, '박병규', '19900303', '010-3333-3333', '서울시 마포구', 'bbq@gmail.com');
+
+CALL CLIENT_CREATE(5001, '박진석', '19960511', '010-5270-9694', '서울시 종로구', 'errandt@gmail.com');
+
+CALL PRODUCT_CREATE(1002, 'T2', 15000000, 'CT');
+
+CALL PRODUCT_UPDATE(1002, 'T2', 15000000, 'CT');
+SELECT count(*)
+FROM CLIENTDB; 
